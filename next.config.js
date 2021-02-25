@@ -15,28 +15,7 @@ const withMDX = require('@next/mdx')({
 const withOffline = require('next-offline')
 
 const nextConfig = {
-  target: 'serverless',
-
-  pageExtensions: ['jsx', 'js', 'mdx', 'md', 'ts', 'tsx'],
-
-  cssModules: true,
-
-  generateEtags: false,
-
-  poweredByHeader: false,
-
-  assetPrefix: isProd ? cdnPrefix : '',
-
-  cssLoaderOptions: {
-    importLoaders: 1,
-    localIdentName: '[local]___[hash:base64:5]',
-  },
-
-  env: {
-    VERSION: require('./package.json').version,
-  },
-  
-  workboxOpts: {
+	workboxOpts: {
     swDest: process.env.NEXT_EXPORT
       ? 'service-worker.js'
       : 'static/service-worker.js',
@@ -61,6 +40,29 @@ const nextConfig = {
       },
     ]
   },
+
+	
+  target: 'serverless',
+
+  pageExtensions: ['jsx', 'js', 'mdx', 'md', 'ts', 'tsx'],
+
+  cssModules: true,
+
+  generateEtags: false,
+
+  poweredByHeader: false,
+
+  assetPrefix: isProd ? cdnPrefix : '',
+
+  cssLoaderOptions: {
+    importLoaders: 1,
+    localIdentName: '[local]___[hash:base64:5]',
+  },
+
+  env: {
+    VERSION: require('./package.json').version,
+  },
+  
 
   experimental: {
     redirects() {
