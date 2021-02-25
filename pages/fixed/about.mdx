@@ -1,0 +1,42 @@
+import Layout from 'lib/components/layout'
+import { Button,Modal ,useModal,Image ,Display,Spacer} from '@geist-ui/react'
+
+export const meta = {
+  title: '关于我',
+  date: '2021-02-25',
+  description: 'About Me.',
+}
+
+
+export const Contact = () => {
+  const { setVisible, bindings } = useModal()
+  return (
+    <>
+      <a href="#" onClick={() => setVisible(true)}>
+        你可以通过这些地址联系我♥
+      </a>
+      <Modal {...bindings}>
+        <Modal.Title>联系我♥</Modal.Title>
+        <Modal.Subtitle>这是安德鲁的联系地址</Modal.Subtitle>
+        <Modal.Content>
+		   <Image width={150} height={150} src="https://cdn.jsdelivr.net/gh/w7xg/Blog/public/assets/2code.png" />
+		   <Spacer y={2}/>
+          <Text>E-mail:xsxg123456@gmail.com</Text>
+		  <Text>Github:@w7xg</Text>
+		  <Text>Twitter:@w7xg233</Text>
+        </Modal.Content>
+        <Modal.Action onClick={({ close }) => close()}>Got it!</Modal.Action>
+      </Modal>
+    </>
+  )
+}
+
+<Display shadow caption="今天又是洛圣都核平的一天">
+    <Image width="100%" src="/images/la.jpg" />
+  </Display>
+
+你好，我叫**安德鲁**，一个~~无政府主义~~者，~~奇怪？~~的人，~~人民公敌~~，~~反动派~~。对`React`和`Airplane`？非常感兴趣。目前正在学习`Next.js`。总共花费了$0在网站搭建上，只是花费了大量时间。主要贡献是没有贡献。<Contact />
+
+
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>
