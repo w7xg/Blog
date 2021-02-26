@@ -17,7 +17,6 @@
     "@geist-ui/react-prism": "^1.0.0",
     "ms": "^2.1.2",
     "next": "^9.5.4",
-    "next-offline": "^5.0.3",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

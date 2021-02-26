@@ -1,5 +1,5 @@
 import Layout from 'lib/components/layout'
-import { Button,Image ,Display ,Snippet,Tabs,Tree} from '@geist-ui/react'
+import { Button,Image ,Display ,Snippet,Tabs,Tree,Spacer} from '@geist-ui/react'
 
 export const meta = {
   title: 'United States of America Introduction',
@@ -8,7 +8,7 @@ export const meta = {
 }
 
 <Display shadow caption="签署《独立宣言》时的场景">
-<Image src="/images/Declaration_of_Independence_(1819),_by_John_Trumbull.jpg" width="100%" />
+<Image src="https://cdn.jsdelivr.net/gh/w7xg/Blog/public/images/Declaration_of_Independence_(1819),_by_John_Trumbull.jpg" width="100%" />
 </Display>
 
 这是维基百科<a>https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9B%BD</a>上关于美利坚合众国的介绍：
@@ -41,7 +41,18 @@ export const meta = {
   <Tree.File name="yarn.lock" />
 </Tree>
 
-https://cdn.jsdelivr.net/gh/w7xg/Blog/public/music/Star_Spangled_Banner_instrumental.ogg.mp3
+<Spacer y={2}/>
+
+美利坚合众国国歌：
+
+<audio  width="100%" 
+    controls="controls" 
+   src="https://cdn.jsdelivr.net/gh/w7xg/Blog/public/music/Star_Spangled_Banner_instrumental.ogg.mp3">
+</audio>
+
+>格言： *In God We Trust*
+
+
 
 
 

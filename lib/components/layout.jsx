@@ -18,7 +18,6 @@ const LayoutHeader = ({ meta }) => (
     {meta.title && <meta property="og:title" content={meta.title} />}
     {meta.image && <meta property="og:image" content={meta.image} />}
     {meta.image && <meta property="twitter:image" content={meta.image} />}
-	<link rel="manifest" href="/manifest.json" />
   </Head>
 )
 
@@ -70,19 +69,19 @@ const Layout = ({ children, meta = {} }) => {
         }
 
         .container :global(h1) {
-          font-size: 2.3rem;
+          font-size: 3rem;
         }
 
         .container :global(h2) {
-          font-size: 2rem;
+          font-size: 2.7rem;
         }
 
         .container :global(h3) {
-          font-size: 1.7rem;
+          font-size: 2.4rem;
         }
 
         .container :global(h4) {
-          font-size: 1.4rem;
+          font-size: 2.0rem;
         }
 
         @media only screen and (max-width: 767px) {

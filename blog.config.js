@@ -13,7 +13,7 @@ const BLOG = {
     list: '所有',
   },
 
-  email: 'xsxg123456@outlook.com',
+  email: 'xsxg123456@gmail.com',
   github: 'w7xg',
   twitter: 'w7xg233',
   domain: 'w7xg.vercel.app',
@@ -21,8 +21,8 @@ const BLOG = {
   enableViews: false,
 
   layouts: {
-    pageWidth: '750px',
-    pageWidthMobile: '88vw',
+    pageWidth: '800px',
+    pageWidthMobile: '85vw',
   },
 }
 

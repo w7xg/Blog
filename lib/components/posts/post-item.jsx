@@ -23,6 +23,7 @@ const PostItem = ({ post }) => {
         </Link>
       </NextLink>
       <style jsx>{`
+	  @import url('https://fonts.googleapis.com/css?family=Roboto');
         .item {
           margin-bottom: calc(1.35 * ${theme.layout.gapHalf});
           overflow: hidden;
@@ -32,6 +33,7 @@ const PostItem = ({ post }) => {
         .item :global(.link) {
           color: ${theme.palette.accents_7};
           transition: color 120ms ease;
+		  font-family: Roboto,  sans-serif;
           font-size: 0.95rem;
           max-width: 95%;
           text-overflow: ellipsis;
@@ -39,6 +41,11 @@ const PostItem = ({ post }) => {
           overflow: hidden;
           display: inline-block;
         }
+		
+		.item :global(.link:hover){
+			text-decoration: underline;
+		}
+		
 
         .date {
           color: ${theme.palette.accents_5};
